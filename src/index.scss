@@ -1,0 +1,62 @@
+@import "./assets/styles/custom";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-display: swap;
+
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  border: 1.2px solid $primary;
+  border-radius: 23px !important;
+  min-width: 140px;
+  // min-height: 46px;
+  &.autowidth {
+    min-width: auto;
+  }
+  &:hover {
+  }
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  @include media-breakpoint-down(md) {
+    min-width: auto;
+  }
+}
+.btn-secondary {
+  background-color: white !important;
+  color: $primary !important;
+  text-transform: uppercase;
+  border: 1.2px solid $primary;
+  border-radius: 23px !important;
+  min-width: 140px;
+  // min-height: 46px;
+  &.autowidth {
+    min-width: auto;
+  }
+  &:hover {
+  }
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: $primary !important;
+    color: white !important;
+  }
+  @include media-breakpoint-down(md) {
+    min-width: auto;
+  }
+}
+button img {
+  height: 25px;
+  width: 25px;
+  margin: 0 10px 0 0;
+}

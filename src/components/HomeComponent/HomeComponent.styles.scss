@@ -1,0 +1,19 @@
+.wrapper {
+    position: relative;
+  img {
+    z-index: 1;
+  }
+  .wrapper__banner{
+    top: 0;
+    left: 0;
+    padding: 1rem 5rem;
+    z-index: 2;  
+    .img-icon{
+      height: 100px;
+      width: 100px;
+    }
+    .custom-btn-width{
+      min-width: 190px;;
+    }
+  }
+}
